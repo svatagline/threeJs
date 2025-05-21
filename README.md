@@ -6,3 +6,4 @@ Final repository
 
 [Video tutorial](https://youtu.be/yA4BpGqT3-s)
 
+[Github Repo](https://github.com/wass08/r3f-ultimate-character-configurator)
