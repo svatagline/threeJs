@@ -80,11 +80,19 @@ export const Avatar = ({ ...props }) => {
             (key) =>
               customization[key]?.asset?.url && (
                 <Suspense key={customization[key].asset.id}>
-                  <Asset
+                  {/* <Asset
                     categoryName={key}
                     url={pb.files.getUrl(
                       customization[key].asset,
                       customization[key].asset.url
+                    )}
+                    skeleton={nodes.Plane.skeleton}
+                  /> */}
+                  <Asset
+                    categoryName={key}
+                    url={`/assets/${customization[key].asset.name}.glb`.replace(
+                      " ",
+                      "."
                     )}
                     skeleton={nodes.Plane.skeleton}
                   />
