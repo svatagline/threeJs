@@ -2906,6 +2906,7 @@ export const useConfiguratorStore = create((set, get) => ({
     // });
     const categories = [...categoryList];
     const assets = [...assetList];
+    console.log("test1254", { categories, assets });
     const customization = {};
     categories.forEach((category) => {
       category.assets = assets.filter((asset) => asset.group === category.id);

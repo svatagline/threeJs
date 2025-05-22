@@ -102,10 +102,10 @@ const AssetsBox = () => {
             {console.log("test2545", pb.files.getUrl(asset, asset.thumbnail))}
             <img
               className="object-cover w-full h-full"
-              // src={pb.files.getUrl(asset, asset.thumbnail)}
-              src={`/assets/${`${asset.name}`
-                .split(" ")[0]
-                .toLocaleLowerCase()}.jpg`}
+              src={pb.files.getUrl(asset, asset.thumbnail)}
+              // src={`/assets/${`${asset.name}`
+              //   .split(" ")[0]
+              //   .toLocaleLowerCase()}.jpg`}
             />
           </button>
         ))}
